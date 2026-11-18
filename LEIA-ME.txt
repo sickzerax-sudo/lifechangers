@@ -26,3 +26,6 @@ DADOS E SINCRONIZAÇÃO
 - As moedas são pontos fictícios do jogo, não dinheiro real.
 
 Para abrir localmente: VS Code > Open Folder > esta pasta > Live Server em index.html.
+
+
+VERSÃO 3.0 — mudanças: missões diárias objetivas com check-in, recompensas predefinidas com custos maiores, identidade visual preto e branco e novo ícone. O progresso salvo na versão anterior é preservado no mesmo navegador.
