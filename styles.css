@@ -16,3 +16,18 @@ body{background:radial-gradient(ellipse at 50% -25%,#252525 0,transparent 38%),v
 .form-row input,.form-row select,.profile-fields input,.profile-fields select{background:#0b0b0b;border-color:#444;color:#fff}
 .wallet strong,.reward-foot b{color:#eee}.reward-foot button{border-color:#555;background:#202020;color:#fff}.file-btn,.status-pill{background:#202020;color:#eee;border-color:#555}.danger{background:#292929;border-color:#777;color:#fff}.online-dot{background:#eee}.toast{background:#f5f5f5;color:#080808}
 .section-note{font-size:11px;color:#999;margin:6px 0 0}
+
+/* LIFECHANGERS MONOCHROME OVERRIDE */
+:root{color-scheme:dark;--bg:#080808;--panel:#111;--panel2:#191919;--line:#303030;--text:#f5f5f5;--muted:#a3a3a3;--blue:#f5f5f5;--purple:#bdbdbd;--green:#d4d4d4;--gold:#f5f5f5;--red:#d4d4d4}
+body{background:#080808!important;color:#f5f5f5}
+.brand-mark{background:#f5f5f5!important;color:#080808!important;border:1px solid #fff!important;border-radius:12px!important;font-size:0!important}
+.brand-mark:before{content:'◎'!important;font:800 30px Arial,sans-serif!important;color:#080808!important}
+.nav:hover,.nav.active{background:#222!important;color:#fff!important}.nav.active{box-shadow:inset 3px 0 #fff!important}
+.primary{background:#f5f5f5!important;color:#080808!important}.ghost,.tab,.file-btn,.status-pill{background:#202020!important;color:#eee!important;border-color:#555!important}
+.hero{background:linear-gradient(120deg,#222,#101010 72%)!important;border-color:#393939!important}.hero-avatar,.avatar-preview{background:#292929!important;border-color:#555!important;color:#fff!important}
+.bar,.attribute-bar{background:#333!important}.bar i,.attribute-bar i{background:linear-gradient(90deg,#777,#fff)!important}
+.mission-icon,.attribute-icon{background:#242424!important}.xp-tag,.attribute-level,.wallet strong,.reward-foot b{color:#eee!important}
+.tab.active{background:#303030!important;color:#fff!important;border-color:#777!important}
+.form-row input,.form-row select,.profile-fields input,.profile-fields select{background:#0b0b0b!important;border-color:#444!important;color:#fff!important}
+.reward-foot button{background:#202020!important;color:#fff!important;border-color:#555!important}.online-dot{background:#eee!important}
+.eyebrow{color:#bbb!important}footer span{color:#fff!important}

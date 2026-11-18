@@ -29,3 +29,7 @@ Para abrir localmente: VS Code > Open Folder > esta pasta > Live Server em index
 
 
 VERSÃO 3.0 — mudanças: missões diárias objetivas com check-in, recompensas predefinidas com custos maiores, identidade visual preto e branco e novo ícone. O progresso salvo na versão anterior é preservado no mesmo navegador.
+
+
+IMPORTANTE — VERSÃO 3.0 CORRIGIDA
+Este ZIP contém os arquivos diretamente na raiz. Ao enviar ao GitHub, abra a pasta extraída e selecione TODOS os arquivos que estão dentro dela (index.html, styles.css, app.js, icon.svg etc.). Não envie a pasta externa como uma subpasta. Substitua os arquivos existentes na raiz do repositório e confirme o commit. O CSS e o ícone usam cache-busting e o service worker agora usa lifechangers-v4.
