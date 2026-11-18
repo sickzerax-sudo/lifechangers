@@ -302,3 +302,19 @@ button,input,select{touch-action:manipulation}
   .mission-status .status-action{font-size:10px!important;letter-spacing:-.15px!important}
   .sidebar .nav{padding:9px 10px!important;font-size:12px!important}
 }
+
+/* LifeChangers 4.0: UI and touch */
+button,.nav,.tab,.brand,.mission summary,.swipe-cue{-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+input,textarea,select{-webkit-user-select:text;user-select:text}
+.entry-screen{position:fixed;inset:0;z-index:10000;background:#09090b;color:#fff;overflow:hidden}
+.entry-screen[hidden]{display:none}
+.entry-cover{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse at 50% 35%,#242429 0%,#0b0b0e 52%,#050506 100%);display:flex;align-items:center;justify-content:center;transition:transform .65s cubic-bezier(.2,.8,.2,1);touch-action:pan-y}
+.entry-screen.login-open .entry-cover{transform:translateY(-105%)}
+.entry-content{text-align:center;padding:25px}.entry-content img{width:min(55vw,220px);height:155px;object-fit:contain;filter:drop-shadow(0 3px 18px #7773)}.entry-content h1{font-size:clamp(32px,7vw,54px);letter-spacing:-1.7px;margin:0}.entry-content p{font-size:10px;letter-spacing:3px;color:#aaa}
+.swipe-cue{position:absolute;bottom:7vh;background:transparent;border:0;color:#ccc;display:flex;flex-direction:column;align-items:center;gap:9px;font-size:13px;cursor:pointer;animation:floatCue 2.4s ease-in-out infinite}.swipe-cue span{font-size:32px}@keyframes floatCue{50%{transform:translateY(-7px)}}
+.entry-login{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:32px;text-align:center}.entry-login img{width:125px;height:100px;object-fit:contain}.entry-login h2{font-size:clamp(22px,5vw,30px);margin:15px 0 0}.entry-login p,.entry-login>small{color:#999}.entry-login button{max-width:340px;width:100%;padding:16px;border-radius:12px;font-weight:700;cursor:pointer}.google-login{background:#ededee;color:#171719;border:0;opacity:.58;cursor:not-allowed!important}.google-login small{margin-left:8px}.guest-login{background:transparent;color:#fff;border:1px solid #666}
+.radar-wrap{display:flex;flex-direction:column;align-items:center;gap:4px;margin-bottom:22px}.radar-wrap canvas{display:block;width:100%;max-width:420px;height:auto}.radar-wrap p{color:#999;font-size:13px;text-align:center}
+.mission-details{grid-column:1/-1;width:100%;border-top:1px solid #2c2c32;margin-top:10px;padding-top:12px}.mission-details summary{cursor:pointer;list-style:none;font-size:13px;font-weight:600;color:#ddd}.mission-details summary::-webkit-details-marker{display:none}.mission-details summary span{float:right}.mission-spec{margin-top:14px;color:#aaa;font-size:13px;line-height:1.6}.mission-spec p{margin:7px 0}.mission-spec label{display:block;margin-top:12px}.mission-step{display:block;width:100%;accent-color:#eee;margin-top:8px}.step-track{height:5px;border-radius:8px;background:#303036;overflow:hidden}.step-track i{display:block;background:#eee;height:100%}
+@media(max-width:760px){.mission{min-width:0}.entry-content img{height:135px}.mission-details{min-width:0}.form-row input,.form-row select{min-width:0}}
+
+.mission-details{grid-column:1/-1!important;grid-row:auto!important}.mission-details .mission-step{width:100%;max-width:100%;min-height:30px}.mission-spec p{font-size:12px!important;line-height:1.6!important}.entry-screen button:focus-visible{outline:2px solid white;outline-offset:4px}.brand-mark{background:#19191b!important}.brand-mark img{object-fit:contain;width:34px;height:34px}

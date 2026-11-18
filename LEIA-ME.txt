@@ -1,1 +1,10 @@
-LifeChangers 3.6 — mobile compacto. Faça backup antes de atualizar. Envie todos os arquivos diretamente para a raiz do repositório GitHub. Não limpe os dados do navegador.
+LifeChangers 4.0 BETA
+
+1. Exporte o backup no LC atual antes de atualizar.
+2. Teste primeiro em navegador separado ou servidor local.
+3. Login Google ainda não funciona: necessita Firebase Authentication e banco com regras.
+4. Modo visitante usa armazenamento local; a tela de entrada aparece a cada nova sessão.
+5. Radar: escala visual de 0 a 500 XP por atributo.
+6. Atributos antigos são consolidados nos cinco novos sem zerar XP total.
+7. Mantenha o ZIP Android original e a chave de assinatura guardados.
+8. Atualize o site GitHub Pages somente depois dos testes.
