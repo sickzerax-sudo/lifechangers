@@ -1,6 +1,6 @@
-LIFECHANGERS 3.1
+LIFECHANGERS 3.1.1 — MOBILE
 
-Atualização: missões diárias e semanais separadas, missões personalizadas com escolha de frequência, status Concluída / Não concluída / Pendente, recompensas com progresso visual e ícones revisados.
+Atualização: missões diárias e semanais separadas, missões personalizadas com escolha de frequência, status Concluída / Não concluída / Pendente, recompensas com progresso visual e ícones revisados e interface adaptada para celular, com botões maiores, campos fáceis de tocar e cartões reorganizados para dispensar zoom.
 
 Para atualizar: faça backup dentro do app (Backup > Exportar backup), extraia este ZIP e envie TODOS os arquivos diretamente para a raiz do repositório GitHub, substituindo os anteriores. Não envie a pasta externa.
 
