@@ -349,3 +349,9 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
 /* More balanced character preview proportions */
 .creator-art{aspect-ratio:300/350;background:radial-gradient(circle at 50% 32%,#303036 0,#18181b 55%,#111113 100%)}
 .creator-stage small{font-size:12px;letter-spacing:.2px}
+
+/* 4.1.2: gesto de abertura no desktop e mobile */
+.entry-cover,.entry-content,.swipe-cue{-webkit-user-select:none;user-select:none;-webkit-user-drag:none;}
+.entry-cover img{pointer-events:none;-webkit-user-drag:none;}
+.entry-cover{touch-action:pan-y;cursor:grab;}
+.entry-cover:active{cursor:grabbing;}

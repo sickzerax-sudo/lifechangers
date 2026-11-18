@@ -69,6 +69,29 @@ document.querySelector('#exportBtn').addEventListener('click',()=>{let blob=new 
 let promptEvent;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();promptEvent=e;document.querySelector('#installBtn').hidden=false});document.querySelector('#installBtn').addEventListener('click',async()=>{if(!promptEvent)return;promptEvent.prompt();await promptEvent.userChoice;promptEvent=null;document.querySelector('#installBtn').hidden=true});if('serviceWorker'in navigator&&location.protocol!=='file:')window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));render();
 
 // Entrada opcional: somente visitante funciona nesta beta; Google exige Firebase real.
-(function(){const entry=document.querySelector('#entry'),cover=document.querySelector('#entryCover'),reveal=document.querySelector('#revealLogin');if(sessionStorage.getItem('lc4-guest')==='yes'){entry.hidden=true;return;}let start=null;function open(){entry.classList.add('login-open')}reveal.addEventListener('click',open);cover.addEventListener('touchstart',e=>{start=e.touches[0].clientY},{passive:true});cover.addEventListener('touchend',e=>{if(start!==null&&start-e.changedTouches[0].clientY>65)open();start=null},{passive:true});document.querySelector('#guestLogin').addEventListener('click',()=>{sessionStorage.setItem('lc4-guest','yes');entry.hidden=true;});})();
+(function(){const entry=document.querySelector('#entry'),cover=document.querySelector('#entryCover'),reveal=document.querySelector('#revealLogin');if(sessionStorage.getItem('lc4-guest')==='yes'){entry.hidden=true;return;}let startY=null,startX=null,dragging=false;
+function open(){entry.classList.add('login-open');cover.style.transform='';}
+reveal.addEventListener('click',open);
+// Pointer Events funcionam com mouse, toque e caneta. O botão continua acessível por teclado.
+cover.addEventListener('pointerdown',e=>{
+  if(entry.classList.contains('login-open')||e.button!==0)return;
+  startY=e.clientY;startX=e.clientX;dragging=true;
+  if(e.pointerType==='mouse'){try{cover.setPointerCapture(e.pointerId)}catch(_){}}
+});
+cover.addEventListener('pointerup',e=>{
+  if(!dragging)return;
+  const delta=startY-e.clientY, horizontal=Math.abs(startX-e.clientX);
+  dragging=false;startY=null;startX=null;
+  if(delta>55&&delta>horizontal*1.2)open();
+});
+cover.addEventListener('pointercancel',()=>{dragging=false;startY=null;startX=null});
+cover.addEventListener('dragstart',e=>e.preventDefault());
+// Fallback para navegadores antigos sem Pointer Events.
+if(!window.PointerEvent){
+  let y=null;
+  cover.addEventListener('touchstart',e=>{y=e.touches[0].clientY},{passive:true});
+  cover.addEventListener('touchend',e=>{if(y!==null&&y-e.changedTouches[0].clientY>55)open();y=null},{passive:true});
+}
+document.querySelector('#guestLogin').addEventListener('click',()=>{sessionStorage.setItem('lc4-guest','yes');entry.hidden=true;});})();
 // Renova o período mesmo se a aba permanecer aberta na virada do dia.
 setInterval(()=>{if(state.date!==today()||state.week!==week())render()},60000);

@@ -1,0 +1,1 @@
+LifeChangers 4.1.2 — Corrige deslizar para cima com mouse e toque. Clique em "Deslize para começar" também funciona. Mantém dados no armazenamento local. Faça backup antes de publicar. Atualização de cache SW v412.
