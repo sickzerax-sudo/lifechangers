@@ -24,7 +24,7 @@ function fresh(){return {date:today(),week:week(),xp:0,coins:0,completed:[],week
 function load(){try{let s=JSON.parse(localStorage.getItem(KEY));if(!s){let old=JSON.parse(localStorage.getItem(OLD));s=fresh();if(old){s.xp=old.xp||0;s.coins=old.coins||0;s.completed=old.completed||[];s.totalCompleted=s.completed.length;s.careDone=!!old.careDone;s.rewards=(old.rewards||[]).map((r,i)=>({id:'legacy'+i,name:r.name,cost:100,claimed:!!r.claimed}));}}return {...fresh(),...(s||{})};}catch{return fresh()}}
 let state=load();
 if(!state.attrsMigrated4){const merged={};for(const [k,v] of Object.entries(state.attrs||{})){const key=normalizedAttr(k);merged[key]=(merged[key]||0)+(Number(v)||0);}state.attrs=merged;state.attrsMigrated4=true;}
-state.missionProgress=state.missionProgress||{};state.history=Array.isArray(state.history)?state.history:[];state.stepChecks=state.stepChecks||{};state.player.creator=state.player.creator||{hair:1,face:1,beard:0,outfit:0,accessory:0,background:0,tone:1};
+state.missionProgress=state.missionProgress||{};state.history=Array.isArray(state.history)?state.history:[];state.stepChecks=state.stepChecks||{};state.player=state.player||fresh().player;state.player.creator=state.player.creator||{hair:1,face:1,beard:0,outfit:0,accessory:0,background:0,tone:1};
 
 state.completed=Array.isArray(state.completed)?state.completed:[];state.weeklyDone=Array.isArray(state.weeklyDone)?state.weeklyDone:[];state.notCompleted=Array.isArray(state.notCompleted)?state.notCompleted:[];state.weeklyNotCompleted=Array.isArray(state.weeklyNotCompleted)?state.weeklyNotCompleted:[];
 // Atualiza apenas recompensas predefinidas; preserva recompensas pessoais e inventário.

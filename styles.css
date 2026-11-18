@@ -355,3 +355,6 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
 .entry-cover img{pointer-events:none;-webkit-user-drag:none;}
 .entry-cover{touch-action:pan-y;cursor:grab;}
 .entry-cover:active{cursor:grabbing;}
+
+/* 4.1.3: independent mission heights and reliable mobile menu */
+.mission-grid{align-items:start!important}.mission-grid>.mission{align-self:start!important;height:auto!important;min-height:0!important}.mobile-more-menu[hidden]{display:none!important}

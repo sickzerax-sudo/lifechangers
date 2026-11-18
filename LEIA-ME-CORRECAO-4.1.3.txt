@@ -1,0 +1,4 @@
+LifeChangers 4.1.3 — Corrige incompatibilidade HTML/JS que travava a abertura.
+Restaurados componentes de navegação mobile, Visão Geral e Perfil/Criador esperados pelo app.js.
+Não apague os dados do site. Faça backup antes de publicar.
+Login Google continua indisponível nesta versão.
