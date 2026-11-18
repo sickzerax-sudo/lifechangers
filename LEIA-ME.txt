@@ -1,5 +1,1 @@
-LifeChangers 3.5 — Abas separadas
-
-A aba Visão geral agora exibe somente o resumo de nível, XP, moedas e progresso diário, com atalhos para outras áreas. Missões, atributos, recompensas e demais funções permanecem em suas abas específicas.
-
-Antes de atualizar, exporte um backup no app. Extraia o ZIP e envie os arquivos para a raiz do repositório GitHub Pages, substituindo os anteriores. Não limpe os dados do navegador.
+LifeChangers 3.6 — mobile compacto. Faça backup antes de atualizar. Envie todos os arquivos diretamente para a raiz do repositório GitHub. Não limpe os dados do navegador.
