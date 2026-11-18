@@ -1,7 +1,10 @@
-LIFECHANGERS 3.1.1 — MOBILE
+LifeChangers 3.3 — Mobile e balanceamento
 
-Atualização: missões diárias e semanais separadas, missões personalizadas com escolha de frequência, status Concluída / Não concluída / Pendente, recompensas com progresso visual e ícones revisados e interface adaptada para celular, com botões maiores, campos fáceis de tocar e cartões reorganizados para dispensar zoom.
+1. No aplicativo atual, exporte um backup antes de atualizar.
+2. Extraia este ZIP e envie TODOS os arquivos para a raiz do mesmo repositorio GitHub Pages.
+3. Substitua os arquivos antigos, faca commit e atualize o site.
+4. Nao apague os dados do site nem o armazenamento local do navegador.
 
-Para atualizar: faça backup dentro do app (Backup > Exportar backup), extraia este ZIP e envie TODOS os arquivos diretamente para a raiz do repositório GitHub, substituindo os anteriores. Não envie a pasta externa.
+Novidades: fontes e botoes maiores no celular; layout adaptado; zoom de pinça desabilitado nos navegadores que respeitam essa configuracao; recompensas padrao mais acessiveis (45 a 350 moedas); recompensa personalizada a partir de 30 moedas; progressao de nivel media e crescente, preservando XP acumulado.
 
-Não apague os dados do navegador: o progresso local será preservado ao atualizar os arquivos no mesmo endereço e navegador.
+Observacao: desabilitar zoom pode afetar acessibilidade. Alguns navegadores podem permitir zoom por configuracoes de acessibilidade.
