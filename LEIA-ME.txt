@@ -1,35 +1,7 @@
-LIFECHANGERS V2 — ATUALIZAÇÃO
+LIFECHANGERS 3.1
 
-O QUE HÁ DE NOVO
-- Loja de recompensas pessoais com custo em moedas e resgate.
-- Inventário com histórico de recompensas resgatadas.
-- Missões diárias, semanais e personalizadas.
-- Dificuldade adaptativa: a recompensa de XP sugerida cresce gradualmente com a experiência total, sem penalidade por pausas.
-- Oito atributos com XP e nível individual.
-- Perfil com nome, avatar e título.
-- Conquistas.
-- Backup manual por arquivo JSON: exportar e importar entre dispositivos.
-- PWA com cache atualizado para v2.
+Atualização: missões diárias e semanais separadas, missões personalizadas com escolha de frequência, status Concluída / Não concluída / Pendente, recompensas com progresso visual e ícones revisados.
 
-ATUALIZAR GITHUB PAGES
-1. Faça uma cópia de segurança dos dados no app atual (Backup > Exportar backup), se já tiver progresso importante.
-2. No computador, extraia este ZIP.
-3. Abra o repositório GitHub lifechangers e use Add file > Upload files.
-4. Envie os arquivos desta pasta, substituindo os arquivos existentes. Não envie a pasta externa nem o ZIP.
-5. Clique em Commit changes e aguarde o Pages publicar.
-6. No celular, feche o app instalado e abra o site no Chrome. Se continuar mostrando a versão antiga, atualize a página; pode ser necessário remover e instalar novamente o PWA para atualizar o cache.
+Para atualizar: faça backup dentro do app (Backup > Exportar backup), extraia este ZIP e envie TODOS os arquivos diretamente para a raiz do repositório GitHub, substituindo os anteriores. Não envie a pasta externa.
 
-DADOS E SINCRONIZAÇÃO
-- O progresso é salvo localmente no navegador/dispositivo.
-- Backup por arquivo permite transportar dados manualmente entre PC e celular.
-- Sincronização automática na nuvem ainda não está conectada. Ela exige escolher e configurar um provedor de autenticação e banco de dados, com regras de acesso privadas. Não insira senhas ou chaves privadas no código público do GitHub.
-- As moedas são pontos fictícios do jogo, não dinheiro real.
-
-Para abrir localmente: VS Code > Open Folder > esta pasta > Live Server em index.html.
-
-
-VERSÃO 3.0 — mudanças: missões diárias objetivas com check-in, recompensas predefinidas com custos maiores, identidade visual preto e branco e novo ícone. O progresso salvo na versão anterior é preservado no mesmo navegador.
-
-
-IMPORTANTE — VERSÃO 3.0 CORRIGIDA
-Este ZIP contém os arquivos diretamente na raiz. Ao enviar ao GitHub, abra a pasta extraída e selecione TODOS os arquivos que estão dentro dela (index.html, styles.css, app.js, icon.svg etc.). Não envie a pasta externa como uma subpasta. Substitua os arquivos existentes na raiz do repositório e confirme o commit. O CSS e o ícone usam cache-busting e o service worker agora usa lifechangers-v4.
+Não apague os dados do navegador: o progresso local será preservado ao atualizar os arquivos no mesmo endereço e navegador.

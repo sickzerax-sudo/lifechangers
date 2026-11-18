@@ -31,3 +31,25 @@ body{background:#080808!important;color:#f5f5f5}
 .form-row input,.form-row select,.profile-fields input,.profile-fields select{background:#0b0b0b!important;border-color:#444!important;color:#fff!important}
 .reward-foot button{background:#202020!important;color:#fff!important;border-color:#555!important}.online-dot{background:#eee!important}
 .eyebrow{color:#bbb!important}footer span{color:#fff!important}
+
+
+/* LIFECHANGERS 3.1 — missões e recompensas interativas */
+.mission{grid-template-columns:42px minmax(0,1fr) auto;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.mission:hover,.reward-card:hover{transform:translateY(-2px);border-color:#777;background:#181818}
+.mission.done{border-color:#777;background:#171717;opacity:1}
+.mission.missed{border-color:#555;background:#101010;opacity:.72}
+.mission.missed h3{color:#aaa}
+.mission-icon{font-size:21px;background:#242424!important}
+.mission-bottom{align-items:flex-start;gap:10px;flex-wrap:wrap}
+.mission-status{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+.status-action{border:1px solid #444;background:#171717;color:#aaa;border-radius:8px;padding:7px 9px;font:600 10px 'DM Sans';cursor:pointer;transition:all .15s ease}
+.status-action:hover{border-color:#aaa;color:#fff}
+.status-action.selected{background:#eee;color:#080808;border-color:#eee}
+.status-action.selected.missed-choice{background:#333;color:#fff;border-color:#777}
+.reward-card{position:relative;overflow:hidden;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.reward-icon{font-size:25px;margin-bottom:10px;filter:grayscale(1)}
+.reward-progress{height:4px;background:#333;border-radius:8px;overflow:hidden;margin:12px 0}
+.reward-progress i{display:block;height:100%;background:linear-gradient(90deg,#777,#fff);border-radius:8px;transition:width .25s ease}
+.reward-foot button{transition:transform .15s ease,opacity .15s ease}
+.reward-foot button:not(:disabled):hover{transform:scale(1.04)}
+@media(max-width:850px){.mission{grid-template-columns:38px minmax(0,1fr) auto}.mission-bottom{display:grid}.mission-status{justify-content:flex-start}.status-action{padding:8px 9px}}
