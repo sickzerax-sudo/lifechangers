@@ -1,90 +1,22 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1020">
-  <meta name="description" content="LifeChangers — transforme sua vida em um RPG.">
-  <title>LifeChangers</title>
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0a1020"><meta name="description" content="Seu RPG pessoal de evolução e hábitos."><title>LifeChangers — Seu RPG pessoal</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg"><link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <div class="brand"><div class="brand-mark">✦</div><div><strong>LifeChangers</strong><small>YOUR LIFE. YOUR GAME.</small></div></div>
-      <nav aria-label="Navegação principal">
-        <button class="nav-item active" data-view="missions">▣ <span>Missões</span></button>
-        <button class="nav-item" data-view="stats">◈ <span>Atributos</span></button>
-        <button class="nav-item" data-view="achievements">♜ <span>Conquistas</span></button>
-        <button class="nav-item" data-view="profile">◎ <span>Perfil</span></button>
-      </nav>
-      <div class="sidebar-note"><span class="dot"></span> Sua jornada começa hoje.</div>
-    </aside>
-
-    <main class="main">
-      <header class="topbar">
-        <div><span class="eyebrow">PAINEL DO AVENTUREIRO</span><h1 id="greeting">Olá, aventureiro!</h1></div>
-        <button id="installBtn" class="install-btn" hidden>⇩ Instalar app</button>
-      </header>
-
-      <section class="hero-card">
-        <div class="hero-top">
-          <div><span class="eyebrow">SEU PERSONAGEM</span><h2 id="rankName">Iniciante</h2><p id="levelLabel">NÍVEL 1</p></div>
-          <div class="avatar">⚡</div>
-        </div>
-        <div class="xp-line"><span>Experiência</span><strong id="xpLabel">0 / 100 XP</strong></div>
-        <div class="progress"><div id="xpBar"></div></div>
-        <div class="quick-stats">
-          <div><strong id="totalXp">0</strong><span>XP total</span></div>
-          <div><strong id="coins">0</strong><span>Moedas</span></div>
-          <div><strong id="completedCount">0</strong><span>Missões concluídas</span></div>
-        </div>
-      </section>
-
-      <section id="view-missions" class="view active">
-        <div class="section-heading"><div><span class="eyebrow">SEU OBJETIVO</span><h2>Missões de hoje</h2></div><span id="missionProgress" class="pill">0/0 feitas</span></div>
-        <div id="missionList" class="mission-list"></div>
-        <form id="customMissionForm" class="custom-form">
-          <label for="customMission">Criar missão personalizada</label>
-          <div class="form-row"><input id="customMission" maxlength="70" placeholder="Ex.: organizar minha mesa" required><button type="submit">＋ Adicionar</button></div>
-          <small>Missões personalizadas valem 15 XP.</small>
-        </form>
-      </section>
-
-      <section id="view-stats" class="view">
-        <div class="section-heading"><div><span class="eyebrow">SEU DESENVOLVIMENTO</span><h2>Atributos</h2></div></div>
-        <div id="statsGrid" class="stats-grid"></div>
-        <p class="muted">Os atributos mostram as áreas que você está trabalhando. O progresso vem de hábitos consistentes, não de perfeição.</p>
-      </section>
-
-      <section id="view-achievements" class="view">
-        <div class="section-heading"><div><span class="eyebrow">MARCOS DA JORNADA</span><h2>Conquistas</h2></div></div>
-        <div id="achievementList" class="achievement-list"></div>
-      </section>
-
-      <section id="view-profile" class="view">
-        <div class="section-heading"><div><span class="eyebrow">SUA FICHA</span><h2>Perfil do aventureiro</h2></div></div>
-        <div class="profile-card">
-          <div class="avatar large">⚡</div><h3 id="profileRank">Iniciante</h3><p id="profileLevel">Nível 1</p>
-          <div class="profile-row"><span>XP acumulado</span><strong id="profileXp">0</strong></div>
-          <div class="profile-row"><span>Moedas conquistadas</span><strong id="profileCoins">0</strong></div>
-          <div class="profile-row"><span>Missões concluídas</span><strong id="profileDone">0</strong></div>
-        </div>
-        <div class="custom-form">
-          <label>Recompensas pessoais</label>
-          <p class="muted">Use suas moedas para acompanhar recompensas que você mesmo escolher. Combine metas saudáveis e realistas.</p>
-          <div class="form-row"><input id="rewardName" maxlength="60" placeholder="Ex.: uma hora de jogo"><button id="addReward">＋ Criar</button></div>
-          <div id="rewardList" class="reward-list"></div>
-        </div>
-        <button id="resetBtn" class="reset-btn">Reiniciar progresso de demonstração</button>
-      </section>
-
-      <footer> LIFECHANGERS <span>•</span> VERSÃO 1.0 • SEU PROGRESSO FICA NESTE DISPOSITIVO</footer>
-    </main>
-  </div>
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
-</body>
-</html>
+<body><div class="shell">
+<aside class="sidebar"><a class="brand" href="#inicio"><span class="brand-mark">⚡</span><span><b>LifeChangers</b><small>LEVEL UP YOUR LIFE</small></span></a>
+<nav id="nav"><button class="nav active" data-view="inicio">⌂ <span>Visão geral</span></button><button class="nav" data-view="missoes">⚔ <span>Missões</span></button><button class="nav" data-view="atributos">◈ <span>Atributos</span></button><button class="nav" data-view="loja">✦ <span>Recompensas</span></button><button class="nav" data-view="inventario">▣ <span>Inventário</span></button><button class="nav" data-view="conquistas">🏆 <span>Conquistas</span></button><button class="nav" data-view="perfil">☻ <span>Personagem</span></button><button class="nav" data-view="backup">↥ <span>Backup</span></button></nav>
+<div class="side-foot"><span class="online-dot"></span> Seu progresso, sua jornada.</div></aside>
+<main class="main"><header class="topbar"><div><div class="eyebrow">SUA JORNADA COMEÇA AGORA</div><h1 id="pageTitle">Visão geral</h1></div><button id="installBtn" class="primary small" hidden>＋ Instalar</button></header>
+<section id="view-inicio" class="view active"><div class="hero"><div class="hero-copy"><span class="eyebrow">BEM-VINDO DE VOLTA</span><h2 id="greeting">Cada passo conta.</h2><p id="rankLine">Continue construindo sua evolução, uma missão por vez.</p><div class="level-line"><b id="levelName">NÍVEL 1 · INICIANTE</b><span id="xpText">0 / 100 XP</span></div><div class="bar"><i id="xpBar"></i></div></div><div class="hero-avatar" id="heroAvatar">⚡</div></div>
+<div class="metrics"><article><small>XP TOTAL</small><strong id="totalXp">0</strong><span>Experiência</span></article><article><small>MOEDAS</small><strong id="coins">0</strong><span>Saldo disponível</span></article><article><small>MISSÕES HOJE</small><strong id="doneToday">0/0</strong><span>Progresso diário</span></article></div>
+<div class="section-head"><div><span class="eyebrow">SEU PRÓXIMO PASSO</span><h2>Missões de hoje</h2></div><button class="ghost" data-goto="missoes">Ver todas →</button></div><div id="homeMissions" class="mission-grid"></div>
+<div class="section-head"><div><span class="eyebrow">EVOLUÇÃO CONTÍNUA</span><h2>Seus atributos</h2></div><button class="ghost" data-goto="atributos">Detalhes →</button></div><div id="homeAttributes" class="attribute-grid"></div></section>
+<section id="view-missoes" class="view"><div class="intro"><span class="eyebrow">QUEST LOG</span><h2>Missões e desafios</h2><p>As sugestões se adaptam ao seu progresso. Descanse quando precisar: não há punição por pausar.</p></div><div class="tabs"><button class="tab active" data-filter="daily">Diárias</button><button class="tab" data-filter="weekly">Semanais</button><button class="tab" data-filter="custom">Personalizadas</button></div><div id="missionList" class="mission-grid"></div><form id="missionForm" class="panel form-panel"><h3>＋ Criar missão</h3><div class="form-row"><input id="missionName" maxlength="55" placeholder="Ex.: revisar minhas anotações" required><select id="missionCategory"><option>Estudos</option><option>Treino e saúde</option><option>Disciplina e rotina</option><option>Alimentação</option><option>Social e comunicação</option><option>Sono e descanso</option><option>Finanças e economia</option><option>Autocuidado & estilo</option></select><button class="primary">Adicionar</button></div></form></section>
+<section id="view-atributos" class="view"><div class="intro"><span class="eyebrow">CHARACTER STATS</span><h2>Seus atributos</h2><p>Cada missão contribui para a área correspondente. Evolução é consistência, não competição.</p></div><div id="attributeList" class="attribute-grid"></div></section>
+<section id="view-loja" class="view"><div class="intro"><span class="eyebrow">REAL-LIFE REWARDS</span><h2>Loja de recompensas</h2><p>Troque moedas por experiências e pequenas recompensas que você escolheu. Combine limites e prioridades com sua família quando envolver gastos.</p></div><div class="wallet panel"><span>SEU SALDO</span><strong>🪙 <b id="shopCoins">0</b> moedas</strong></div><form id="rewardForm" class="panel form-panel"><h3>＋ Criar recompensa pessoal</h3><div class="form-row"><input id="rewardName" maxlength="60" placeholder="Ex.: escolher um filme para a noite" required><input id="rewardCost" type="number" min="1" max="5000" value="50" required><button class="primary">Adicionar</button></div><small>Defina custos simbólicos e realistas. Moedas não representam dinheiro real.</small></form><div id="rewardList" class="reward-grid"></div></section>
+<section id="view-inventario" class="view"><div class="intro"><span class="eyebrow">YOUR COLLECTION</span><h2>Inventário</h2><p>Suas recompensas resgatadas ficam guardadas aqui.</p></div><div id="inventoryList" class="reward-grid"></div></section>
+<section id="view-conquistas" class="view"><div class="intro"><span class="eyebrow">ACHIEVEMENTS</span><h2>Conquistas</h2><p>Marcos da sua jornada, sem pressão para desbloquear tudo de uma vez.</p></div><div id="achievementList" class="achievement-grid"></div></section>
+<section id="view-perfil" class="view"><div class="intro"><span class="eyebrow">PLAYER PROFILE</span><h2>Seu personagem</h2><p>Personalize sua identidade dentro do jogo.</p></div><div class="profile-layout panel"><div class="avatar-preview" id="avatarPreview">⚡</div><div class="profile-fields"><label>Nome do personagem<input id="playerName" maxlength="24" placeholder="Aventureiro"></label><label>Avatar<select id="avatarChoice"><option>⚡</option><option>🧙</option><option>🛡️</option><option>🐉</option><option>🌟</option><option>🦊</option><option>🚀</option><option>🌙</option></select></label><label>Título<select id="titleChoice"><option>Iniciante</option><option>Explorador</option><option>Construtor de hábitos</option><option>Guardião da rotina</option><option>Mestre da constância</option></select></label><button id="saveProfile" class="primary">Salvar personagem</button></div></div><div class="panel profile-summary"><div><small>NÍVEL</small><b id="profileLevel">1</b></div><div><small>XP TOTAL</small><b id="profileXp">0</b></div><div><small>MISSÕES CONCLUÍDAS</small><b id="profileDone">0</b></div></div></section>
+<section id="view-backup" class="view"><div class="intro"><span class="eyebrow">DATA & SAFETY</span><h2>Backup e sincronização</h2><p>Proteja seu progresso antes de trocar de aparelho ou atualizar o projeto.</p></div><div class="panel backup-card"><h3>↧ Backup por arquivo</h3><p>Baixe uma cópia dos seus dados e importe-a em outro dispositivo. Guarde o arquivo em local privado.</p><div class="actions"><button id="exportBtn" class="primary">Exportar backup</button><label class="file-btn">Importar backup<input id="importFile" type="file" accept="application/json"></label></div></div><div class="panel backup-card"><h3>☁ Sincronização na nuvem</h3><p>A sincronização automática entre PC e celular precisa de um serviço de banco de dados e de configuração própria. Ainda não está conectada nesta versão; não vamos fingir que está funcionando.</p><span class="status-pill">Preparada para configuração</span><p class="hint">Quando escolhermos um provedor, configuraremos login e regras de segurança para que somente sua conta acesse os dados.</p></div><div class="panel backup-card"><h3>⚠ Reiniciar progresso</h3><p>Apaga os dados locais deste navegador. Exporte um backup antes.</p><button id="resetBtn" class="danger">Apagar dados deste dispositivo</button></div></section>
+<footer>LIFECHANGERS <span>•</span> VERSÃO 2.0 <span>•</span> EVOLUA NO SEU RITMO</footer></main></div><div id="toast" class="toast" role="status" aria-live="polite"></div><script src="app.js"></script></body></html>

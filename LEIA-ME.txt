@@ -1,36 +1,28 @@
-LIFECHANGERS — COMO ABRIR
+LIFECHANGERS V2 — ATUALIZAÇÃO
 
-IMPORTANTE: para instalar como PWA, o app precisa ser servido por localhost ou hospedado em HTTPS. Não basta abrir o index.html com duplo clique.
+O QUE HÁ DE NOVO
+- Loja de recompensas pessoais com custo em moedas e resgate.
+- Inventário com histórico de recompensas resgatadas.
+- Missões diárias, semanais e personalizadas.
+- Dificuldade adaptativa: a recompensa de XP sugerida cresce gradualmente com a experiência total, sem penalidade por pausas.
+- Oito atributos com XP e nível individual.
+- Perfil com nome, avatar e título.
+- Conquistas.
+- Backup manual por arquivo JSON: exportar e importar entre dispositivos.
+- PWA com cache atualizado para v2.
 
-OPÇÃO MAIS SIMPLES (Windows):
-1. Instale o Visual Studio Code e a extensão "Live Server".
-2. Extraia a pasta LifeChangers.
-3. Abra a pasta no VS Code.
-4. Clique com o botão direito em index.html e escolha "Open with Live Server".
-5. O app abrirá no navegador. O endereço normalmente começa com http://127.0.0.1:5500.
-6. No Chrome, use o ícone de instalação na barra de endereço ou o menu ⋮ > Salvar e compartilhar > Instalar página como app (o texto pode variar).
+ATUALIZAR GITHUB PAGES
+1. Faça uma cópia de segurança dos dados no app atual (Backup > Exportar backup), se já tiver progresso importante.
+2. No computador, extraia este ZIP.
+3. Abra o repositório GitHub lifechangers e use Add file > Upload files.
+4. Envie os arquivos desta pasta, substituindo os arquivos existentes. Não envie a pasta externa nem o ZIP.
+5. Clique em Commit changes e aguarde o Pages publicar.
+6. No celular, feche o app instalado e abra o site no Chrome. Se continuar mostrando a versão antiga, atualize a página; pode ser necessário remover e instalar novamente o PWA para atualizar o cache.
 
-SEM VS CODE:
-1. Instale Python 3, se ainda não tiver.
-2. Abra o Prompt de Comando dentro da pasta LifeChangers.
-3. Execute: python -m http.server 8000
-4. Abra http://localhost:8000 no Chrome.
+DADOS E SINCRONIZAÇÃO
+- O progresso é salvo localmente no navegador/dispositivo.
+- Backup por arquivo permite transportar dados manualmente entre PC e celular.
+- Sincronização automática na nuvem ainda não está conectada. Ela exige escolher e configurar um provedor de autenticação e banco de dados, com regras de acesso privadas. Não insira senhas ou chaves privadas no código público do GitHub.
+- As moedas são pontos fictícios do jogo, não dinheiro real.
 
-NO CELULAR:
-Para instalar no celular, publique a pasta em um serviço de hospedagem HTTPS (por exemplo, GitHub Pages ou Netlify) e abra o link no navegador do celular. Para testar localmente, PC e celular precisam estar na mesma rede e o servidor deve aceitar conexões da rede.
-
-O QUE JÁ FUNCIONA:
-- Missões diárias e personalizadas
-- XP, níveis e moedas
-- Oito atributos, incluindo Autocuidado & Estilo
-- Conquistas
-- Recompensas pessoais
-- Salvamento local no navegador (localStorage)
-- Layout adaptável a PC e celular
-- Cache básico para uso offline após a primeira visita
-
-LIMITAÇÕES DESTA VERSÃO:
-- O salvamento fica neste navegador/dispositivo; não sincroniza automaticamente entre PC e celular.
-- A lista de missões reinicia diariamente; o XP total permanece.
-- Esta é uma primeira versão local, sem conta/login ou nuvem.
-- Use o app como apoio à rotina, sem transformar metas em cobrança. Ajuste ou pule missões quando precisar.
+Para abrir localmente: VS Code > Open Folder > esta pasta > Live Server em index.html.
