@@ -341,3 +341,11 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
  .main{padding-bottom:calc(100px + env(safe-area-inset-bottom))!important}
  .toast{bottom:calc(85px + env(safe-area-inset-bottom))}
 }
+
+/* 4.1.1: independent quest card heights; no stretching when a neighbor expands */
+.main .mission-grid{align-items:start!important;align-content:start!important;grid-auto-rows:max-content}
+.main .mission-grid>.mission{align-self:start!important;height:auto!important;min-height:0!important;align-content:start!important}
+.main .mission-grid>.mission .mission-details{min-width:0}
+/* More balanced character preview proportions */
+.creator-art{aspect-ratio:300/350;background:radial-gradient(circle at 50% 32%,#303036 0,#18181b 55%,#111113 100%)}
+.creator-stage small{font-size:12px;letter-spacing:.2px}

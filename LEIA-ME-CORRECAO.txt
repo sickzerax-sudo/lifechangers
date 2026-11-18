@@ -1,0 +1,1 @@
+LifeChangers 4.1.1 — Ajuste de cartões de missão que esticavam juntos e proporção da prévia do avatar. O desenho vetorial do avatar permanece em revisão. Faça backup antes de atualizar.
