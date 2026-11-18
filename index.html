@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="LifeChangers — transforme sua vida em um RPG.">
+  <title>LifeChangers</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">✦</div><div><strong>LifeChangers</strong><small>YOUR LIFE. YOUR GAME.</small></div></div>
+      <nav aria-label="Navegação principal">
+        <button class="nav-item active" data-view="missions">▣ <span>Missões</span></button>
+        <button class="nav-item" data-view="stats">◈ <span>Atributos</span></button>
+        <button class="nav-item" data-view="achievements">♜ <span>Conquistas</span></button>
+        <button class="nav-item" data-view="profile">◎ <span>Perfil</span></button>
+      </nav>
+      <div class="sidebar-note"><span class="dot"></span> Sua jornada começa hoje.</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div><span class="eyebrow">PAINEL DO AVENTUREIRO</span><h1 id="greeting">Olá, aventureiro!</h1></div>
+        <button id="installBtn" class="install-btn" hidden>⇩ Instalar app</button>
+      </header>
+
+      <section class="hero-card">
+        <div class="hero-top">
+          <div><span class="eyebrow">SEU PERSONAGEM</span><h2 id="rankName">Iniciante</h2><p id="levelLabel">NÍVEL 1</p></div>
+          <div class="avatar">⚡</div>
+        </div>
+        <div class="xp-line"><span>Experiência</span><strong id="xpLabel">0 / 100 XP</strong></div>
+        <div class="progress"><div id="xpBar"></div></div>
+        <div class="quick-stats">
+          <div><strong id="totalXp">0</strong><span>XP total</span></div>
+          <div><strong id="coins">0</strong><span>Moedas</span></div>
+          <div><strong id="completedCount">0</strong><span>Missões concluídas</span></div>
+        </div>
+      </section>
+
+      <section id="view-missions" class="view active">
+        <div class="section-heading"><div><span class="eyebrow">SEU OBJETIVO</span><h2>Missões de hoje</h2></div><span id="missionProgress" class="pill">0/0 feitas</span></div>
+        <div id="missionList" class="mission-list"></div>
+        <form id="customMissionForm" class="custom-form">
+          <label for="customMission">Criar missão personalizada</label>
+          <div class="form-row"><input id="customMission" maxlength="70" placeholder="Ex.: organizar minha mesa" required><button type="submit">＋ Adicionar</button></div>
+          <small>Missões personalizadas valem 15 XP.</small>
+        </form>
+      </section>
+
+      <section id="view-stats" class="view">
+        <div class="section-heading"><div><span class="eyebrow">SEU DESENVOLVIMENTO</span><h2>Atributos</h2></div></div>
+        <div id="statsGrid" class="stats-grid"></div>
+        <p class="muted">Os atributos mostram as áreas que você está trabalhando. O progresso vem de hábitos consistentes, não de perfeição.</p>
+      </section>
+
+      <section id="view-achievements" class="view">
+        <div class="section-heading"><div><span class="eyebrow">MARCOS DA JORNADA</span><h2>Conquistas</h2></div></div>
+        <div id="achievementList" class="achievement-list"></div>
+      </section>
+
+      <section id="view-profile" class="view">
+        <div class="section-heading"><div><span class="eyebrow">SUA FICHA</span><h2>Perfil do aventureiro</h2></div></div>
+        <div class="profile-card">
+          <div class="avatar large">⚡</div><h3 id="profileRank">Iniciante</h3><p id="profileLevel">Nível 1</p>
+          <div class="profile-row"><span>XP acumulado</span><strong id="profileXp">0</strong></div>
+          <div class="profile-row"><span>Moedas conquistadas</span><strong id="profileCoins">0</strong></div>
+          <div class="profile-row"><span>Missões concluídas</span><strong id="profileDone">0</strong></div>
+        </div>
+        <div class="custom-form">
+          <label>Recompensas pessoais</label>
+          <p class="muted">Use suas moedas para acompanhar recompensas que você mesmo escolher. Combine metas saudáveis e realistas.</p>
+          <div class="form-row"><input id="rewardName" maxlength="60" placeholder="Ex.: uma hora de jogo"><button id="addReward">＋ Criar</button></div>
+          <div id="rewardList" class="reward-list"></div>
+        </div>
+        <button id="resetBtn" class="reset-btn">Reiniciar progresso de demonstração</button>
+      </section>
+
+      <footer> LIFECHANGERS <span>•</span> VERSÃO 1.0 • SEU PROGRESSO FICA NESTE DISPOSITIVO</footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
