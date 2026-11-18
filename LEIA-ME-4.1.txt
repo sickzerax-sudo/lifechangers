@@ -1,0 +1,32 @@
+LIFECHANGERS 4.1 — PREVIEW DE TESTES
+
+INCLUÍDO
+- Tela inicial com gesto de deslizar para cima e login visitante (mantidos).
+- Identidade visual LC preto e branco (mantida).
+- Visão Geral mais compacta com progresso semanal e cinco atributos.
+- Missões diárias mais específicas, detalhes expansíveis e checklists parciais.
+- Cinco atributos e gráfico de radar.
+- Perfil com nome, título, progresso e criador de personagem ilustrado em SVG.
+- Criador de personagem sem avatares prontos nem galeria de estilos.
+- Navegação inferior fixa no celular, com menu Mais.
+- Renovação diária e semanal ao detectar mudança de data.
+- Backup local por arquivo JSON.
+
+IMPORTANTE
+- O login Google e a sincronização em nuvem NÃO estão implementados; o botão Google está desativado.
+- Este ZIP NÃO contém APK ou AAB. É um projeto PWA para navegador/GitHub Pages.
+- O criador de personagem usa ilustrações vetoriais estilizadas; não é ainda a arte manga detalhada do conceito visual.
+- A renovação das missões acontece ao abrir o app ou quando ele detecta mudança de data. Dados ficam no armazenamento local do navegador.
+- O progresso salvo no domínio do GitHub Pages NÃO é compartilhado automaticamente com um teste aberto como arquivo local ou em outro domínio.
+- ANTES DE PUBLICAR: entre no LC atual > Backup > Exportar backup. Guarde o JSON em local seguro.
+- NÃO apague os dados do site nem desinstale o APK existente antes de testar e salvar o backup.
+
+COMO TESTAR
+1. Extraia este ZIP.
+2. Abra index.html no computador para inspecionar a interface. Para testar PWA, use um servidor local ou GitHub Pages.
+3. Toque em Deslize para começar > Continuar sem conta.
+4. Confira Visão Geral, Missões, Atributos, Personagem e navegação mobile.
+5. Publique no GitHub somente depois de conferir os dados e exportar um backup.
+
+NOTA SOBRE MISSÕES
+Os nomes e objetivos das missões padrão foram revisados. Seus registros de progresso existentes são preservados por ID; se já marcou uma missão antiga no mesmo dia, ela pode aparecer concluída com o nome novo. A partir do próximo ciclo a missão reinicia normalmente.
