@@ -1,0 +1,9 @@
+LifeChangers Android - pacote preparado para PWABuilder
+
+1. Envie os arquivos desta pasta para a raiz do repositorio GitHub Pages, substituindo os antigos.
+2. Confirme que o site publico esta atualizado.
+3. Acesse https://www.pwabuilder.com/ e informe https://sickzerax-sudo.github.io/lifechangers/
+4. Use a opcao de empacotar para Android. Siga os requisitos apresentados pelo servico para obter APK de teste.
+5. Guarde com seguranca qualquer chave de assinatura gerada; ela sera importante para futuras atualizacoes.
+
+IMPORTANTE: o APK instala o app como aplicativo separado. O progresso do navegador pode nao ser transferido automaticamente. Exporte backup no site e importe no aplicativo depois de instalar.
