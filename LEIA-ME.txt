@@ -1,10 +1,5 @@
-LifeChangers 3.3 — Mobile e balanceamento
+LifeChangers 3.5 — Abas separadas
 
-1. No aplicativo atual, exporte um backup antes de atualizar.
-2. Extraia este ZIP e envie TODOS os arquivos para a raiz do mesmo repositorio GitHub Pages.
-3. Substitua os arquivos antigos, faca commit e atualize o site.
-4. Nao apague os dados do site nem o armazenamento local do navegador.
+A aba Visão geral agora exibe somente o resumo de nível, XP, moedas e progresso diário, com atalhos para outras áreas. Missões, atributos, recompensas e demais funções permanecem em suas abas específicas.
 
-Novidades: fontes e botoes maiores no celular; layout adaptado; zoom de pinça desabilitado nos navegadores que respeitam essa configuracao; recompensas padrao mais acessiveis (45 a 350 moedas); recompensa personalizada a partir de 30 moedas; progressao de nivel media e crescente, preservando XP acumulado.
-
-Observacao: desabilitar zoom pode afetar acessibilidade. Alguns navegadores podem permitir zoom por configuracoes de acessibilidade.
+Antes de atualizar, exporte um backup no app. Extraia o ZIP e envie os arquivos para a raiz do repositório GitHub Pages, substituindo os anteriores. Não limpe os dados do navegador.

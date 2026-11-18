@@ -266,3 +266,6 @@ button,input,select{touch-action:manipulation}
  .main .mission-bottom{margin-top:12px!important;padding-top:15px!important}
 }
 @media(max-width:380px){.main{padding-left:14px!important;padding-right:14px!important}.sidebar{padding-left:12px!important;padding-right:12px!important}}
+
+/* 3.5: visão geral enxuta, áreas isoladas por aba */
+.overview-shortcuts{margin-top:28px;padding:22px;border:1px solid #333;border-radius:18px;background:#121212}.overview-shortcuts h2{margin:0 0 8px;color:#fff}.overview-shortcuts p{color:#aaa;margin:0 0 18px;line-height:1.55}.overview-links{display:flex;flex-wrap:wrap;gap:12px}.overview-links button{min-height:46px;padding:12px 18px;border:1px solid #555;background:#202020;color:#fff;border-radius:12px;cursor:pointer}@media(max-width:640px){.overview-shortcuts{margin-top:22px;padding:18px}.overview-links{display:grid;grid-template-columns:1fr;gap:12px}.overview-links button{width:100%;font-size:16px;min-height:50px}}
